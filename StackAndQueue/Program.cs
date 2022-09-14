@@ -10,7 +10,7 @@ namespace StackAndQueue
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Chosse a option\n 1 . Push the elements in the stack");
+            Console.WriteLine("Chosse a option\n 1 . Push the elements in the stack\n 2. Peek and Pop the element in the stack");
             int option=Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             switch (option)
@@ -21,6 +21,16 @@ namespace StackAndQueue
                     stack1.Push(30);
                     stack1.Push(56);
                     stack1.Display();
+                    break;
+                case 2:
+                    StackPeekPopOperation stack2 = new StackPeekPopOperation();
+                    stack2.Push(70);
+                    stack2.Push(30);
+                    stack2.Push(56);
+                    
+                    stack2.IsEmpty();
+
+                    stack2.Display();
                     break;
                 default:
                     Console.WriteLine("Choose a appropriate option");
